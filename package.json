@@ -1,0 +1,22 @@
+{
+  "name": "library-management-system",
+  "version": "1.0.0",
+  "description": "Fullstack Library Management System built with Node.js, Express, and SQL (SQLite)",
+  "main": "backend/src/server.js",
+  "scripts": {
+    "start": "node backend/src/server.js",
+    "dev": "node --watch backend/src/server.js",
+    "db:reset": "node backend/src/config/resetDb.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
